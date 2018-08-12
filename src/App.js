@@ -9,6 +9,7 @@ import MyCard from "./components/Cards";
 import Attendees from "./components/Attendees";
 import MyFooter from "./components/layout/Footer";
 import Mybio from "./components/bio";
+import Chat from "./components/chat";
 
 
 class App extends Component {
@@ -41,11 +42,13 @@ class App extends Component {
 						<AppNavbar/>
 						<br/>
 						<Mybio/>
-						<br/>
+						<br/><br/><br/><br/><br/><br/><br/>
+
 						<MyCard />
 						<br/>
 						<Attendees/>
-						<br/>
+						<br/><br/><br/><br/><br/><br/>
+						
 						<MyFooter/>
 						</div>
 					}}

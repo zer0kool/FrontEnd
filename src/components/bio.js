@@ -1,12 +1,15 @@
 import React, { Component } from "react";
 import {vcard} from "react-materialize";
 import "./bio.css" 
+import Chat from "./chat";
 
 class Mybio extends Component {
 	render() {
 		return (
             <div id="v-card-holder" className={"bio section"}>
                         <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                        <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
 
             <div class="container">
                 <div class="row">
@@ -35,7 +38,13 @@ class Mybio extends Component {
                            
                                 <div class="info-headings">
                                     <h4 class="text-uppercase left">Netflix</h4>
-                                    <button id="follow" class="btn btn-default btn-primary follow-button" type="button">Follow</button>
+                                    <br/>
+                                    <p className="title green-text">Online</p>
+                                        <div id="modal1" class="modal" style={{zIndex:10000}}>
+                                           <Chat/>
+                                        </div>
+                                    <button id="follow" class="btn btn-default btn-primary blue follow-button left modal-trigger" href="#modal1" type="button">Lets Connect</button>
+
                                 </div>
 
                                  <div class="infos">
